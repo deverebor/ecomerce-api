@@ -1,6 +1,5 @@
 # Django e-comerce api
 
-![GitHub repo size](https://https://img.shields.io/github/repo-size/deverebor/ecomerce-api?style=for-the-badge) 
 ![GitHub language count](https://img.shields.io/github/languages/count/deverebor/ecomerce-api?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/deverebor/ecomerce-api?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/deverebor/ecomerce-api?style=for-the-badge)
