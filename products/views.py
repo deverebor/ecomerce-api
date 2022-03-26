@@ -11,9 +11,14 @@ class ProductListCreateAPIView(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         name = serializer.validated_data.get('name')
         description = serializer.validated_data.get('description') or None
+        user = serializer.validated_data.get('user') or None
         if description is None:
             description = name
         serializer.save(description=description)
+        
+        if user is None:
+            user = "Usuário indisponível"
+        serializer.save(user=user)
 
 product_list_create_view = ProductListCreateAPIView.as_view()
 
