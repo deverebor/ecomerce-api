@@ -4,7 +4,16 @@ import requests
 Helper to view an determinated detail product
 """
 
-endpoint = "http://localhost:8000/api/v1/products/1/"
+endpoint = input("Endpoint: ")
 
-get_response = requests.get(endpoint)
-print(get_response.json())
+try:
+  endpoint = str(endpoint)
+except:
+  endpoint = None
+  print(f'{endpoint} enpoint incorrect, please try again')
+
+if endpoint:
+  endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/1/"
+
+  get_response = requests.get(endpoint_url)
+  print(get_response.json())

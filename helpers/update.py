@@ -5,7 +5,16 @@ from helpers.variables import Variables
 Helper to update an product information
 """
 
-endpoint = "http://localhost:8000/api/v1/products/1/update/"
+endpoint = input("Endpoint: ")
 
-get_response = requests.put(endpoint, json=Variables.data)
-print(get_response.json())
+try:
+  endpoint = str(endpoint)
+except:
+  endpoint = None
+  print(f'{endpoint} enpoint incorrect, please try again')
+
+if endpoint:
+  endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/1/update/"
+
+  get_response = requests.put(endpoint_url, json=Variables.data)
+  print(get_response.json())
