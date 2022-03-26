@@ -1,5 +1,5 @@
 import requests
-from helpers.variables import Variables
+from variables import Variables
 
 """
 Helper to create an products
