@@ -20,9 +20,6 @@ except:
   endpoint = None
   print(f'{update_id} id incorrect, please try again')
 
-if endpoint:
-  endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/1/update/"
-
 if endpoint == 'products' and update_id:
   endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/{update_id}/update/"
 
