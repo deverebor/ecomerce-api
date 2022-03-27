@@ -4,7 +4,7 @@ import requests
 Helper to destroy an product
 """
 
-id_product = input("What id do you want to destroy ? ")
+id_product = input("What ID do you want to destroy ? ")
 endpoint = input("Endpoint: ")
 
 try:
