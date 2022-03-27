@@ -20,19 +20,19 @@ except:
     print(f'{endpoint} enpoint incorrect, please try again')
 
 if endpoint == 'products' and id_product:
-    endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/"
+    endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/{id_product}/destroy/"
 
     get_response = requests.delete(endpoint_url)
     print(get_response.status_code, get_response.status_code == 204)
   
 elif endpoint == 'users' and id_product:
-    endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/"
+    endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/{id_product}/destroy/"
 
     get_response = requests.delete(endpoint_url)
     print(get_response.status_code, get_response.status_code == 204)
     
 elif endpoint == 'sellers' and id_product:
-    endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/"
+    endpoint_url = f"http://localhost:8000/api/v1/{endpoint}/{id_product}/destroy/"
 
     get_response = requests.delete(endpoint_url)
     print(get_response.status_code, get_response.status_code == 204)
