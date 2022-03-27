@@ -11,7 +11,3 @@ class Product(models.Model):
     validate_day = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to=upload_image_book, blank=True, null=True)
     price = models.DecimalField(max_digits=20, decimal_places=2, default=00.00)
-    
-    @property
-    def sale_price(self):
-        return "%.2f" %(float(self.price) * 0.8)

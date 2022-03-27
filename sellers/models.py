@@ -14,7 +14,7 @@ class Seller(models.Model):
     company_product_type = models.CharField(max_length=120)
     email = models.CharField(max_length=120)
     password = models.CharField(max_length=120)
-    company_picture = models.ImageField(upload_to=upload_profile_picture)
+    company_picture = models.ImageField(upload_to=upload_profile_picture, blank=True, null=True)
     country = models.CharField(max_length=120)
     city = models.CharField(max_length=120)
     join_date = models.DateTimeField(auto_now_add=True)
