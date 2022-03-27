@@ -1,5 +1,7 @@
 
-
+"""
+Here we define the variables that are used helpers in the project.
+"""
 
 class ProductsVariables:
     data = {
