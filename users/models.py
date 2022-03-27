@@ -12,7 +12,7 @@ class User(models.Model):
     last_name = models.CharField(max_length=120)
     email = models.CharField(max_length=120)
     password = models.CharField(max_length=120)
-    profile_picture = models.ImageField(upload_to=upload_profile_picture)
+    profile_picture = models.ImageField(upload_to=upload_profile_picture, blank=True, null=True)
     country = models.CharField(max_length=120)
     city = models.CharField(max_length=120)
     join_date = models.DateTimeField(auto_now_add=True)
