@@ -1,4 +1,4 @@
-# Django e-comerce api
+# (WIP) Django e-comerce api
 
 ![GitHub language count](https://img.shields.io/github/languages/count/deverebor/ecomerce-api?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/deverebor/ecomerce-api?style=for-the-badge)
